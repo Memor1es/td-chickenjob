@@ -58,7 +58,7 @@ AddEventHandler('td-chickenjob:Tavuksatma', function()
 				
 	    if tavuk > 0 then
 		  xPlayer.removeInventoryItem('packaged_chicken', 1)
-			xPlayer.addMoney(1)
+			xPlayer.addMoney(90)
 			TriggerClientEvent('mythic_notify:client:SendAlert', xPlayer.source, { type = 'inform', text = 'Tavuk sattın.'})
 		else 
 			TriggerClientEvent('mythic_notify:client:SendAlert', xPlayer.source, { type = 'inform', text = 'Satacak bir tavuğun yok'})
